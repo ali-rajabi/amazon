@@ -10,5 +10,5 @@ export default async function ProductPage({
 }) {
   const { data } = await getProducts({ id: +params.slug });
 
-  return <Client data={data} />;
+  return data && <Client data={data} />;
 }

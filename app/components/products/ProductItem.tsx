@@ -15,7 +15,7 @@ export type productShape = {
 };
 
 type ProductItemProps = {
-  data: productShape;
+  data: any;
 };
 
 export default function ProductItem({ data }: ProductItemProps) {
